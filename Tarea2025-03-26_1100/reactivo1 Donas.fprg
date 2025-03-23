@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fabrica de donas"/>
+        <attribute name="authors" value="Ximena"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-22 04:43:56 p. m."/>
+        <attribute name="created" value="WGltZW5hO0RFU0tUT1AtTDAzUU5VMjsyMDI1LTAzLTIyOzAyOjA1OjE4IHAuIG0uOzMxMjY="/>
+        <attribute name="edited" value="WGltZW5hO0RFU0tUT1AtTDAzUU5VMjsyMDI1LTAzLTIyOzA0OjQzOjU2IHAuIG0uOzI7MzI0MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="costoD, total" type="Real" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="costoD" expression="10"/>
+            <if expression="n&gt;=50">
+                <then>
+                    <assign variable="costoD" expression="8.00"/>
+                </then>
+                <else>
+                    <if expression="n&gt;=30">
+                        <then>
+                            <assign variable="costoD" expression="9.00"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+            <assign variable="total" expression="n*costoD"/>
+            <output expression="total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
