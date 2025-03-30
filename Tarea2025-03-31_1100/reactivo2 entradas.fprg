@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="reactivo2 CostosdeEntradas"/>
+        <attribute name="authors" value="Ximena"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-30 05:03:41 p. m."/>
+        <attribute name="created" value="WGltZW5hO0RFU0tUT1AtTDAzUU5VMjsyMDI1LTAzLTMwOzAyOjAzOjA3IHAuIG0uOzMxMjE="/>
+        <attribute name="edited" value="WGltZW5hO0RFU0tUT1AtTDAzUU5VMjsyMDI1LTAzLTMwOzA1OjAzOjQxIHAuIG0uOzI7MzIzMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;&#191;que edad tienes?&quot;" newline="True"/>
+            <declare name="n, entrada" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <if expression="n&lt;4 AND n&gt;=0">
+                <then>
+                    <output expression="&quot;entrada=$0.00&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="n&gt;=4 AND n&lt;=18">
+                        <then>
+                            <output expression="&quot;entrada=$200.00&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="n&gt;18 AND n&lt;=100">
+                                <then>
+                                    <output expression="&quot;entrada=$500.00&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;no valido&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
