@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="pizza"/>
+        <attribute name="authors" value="Ximena"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-03 10:47:00 p. m."/>
+        <attribute name="created" value="WGltZW5hO0RFU0tUT1AtTDAzUU5VMjsyMDI1LTA0LTAzOzA4OjMxOjM0IHAuIG0uOzMxMjk="/>
+        <attribute name="edited" value="WGltZW5hO0RFU0tUT1AtTDAzUU5VMjsyMDI1LTA0LTAzOzEwOjQ3OjAwIHAuIG0uOzQ7MzIzMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pizza, extra, ingredientesV, ingredientesNV, extra" type="String" array="False" size=""/>
+            <output expression="&quot;&#191;que tipo de pizza quiere, vegetariana o no vegetariana?&quot;" newline="True"/>
+            <input variable="pizza"/>
+            <if expression="pizza=&quot;vegetariana&quot;">
+                <then>
+                    <output expression="&quot;elige un ingrediente: Pimiento o tofu&quot;" newline="True"/>
+                    <input variable="extra"/>
+                    <assign variable="ingredientesV" expression="&quot;mozzarella,tomate y &quot;&amp;extra"/>
+                    <output expression="&quot;su pizza es vegetariana con los siguientes ingredientes:&quot;&amp;ingredientesV" newline="True"/>
+                </then>
+                <else>
+                    <if expression="pizza=&quot;no vegetariana&quot;">
+                        <then>
+                            <output expression="&quot;elige un ingrediente: peperoni,jamon o salmon&quot;" newline="True"/>
+                            <input variable="extra"/>
+                            <assign variable="ingredientesNV" expression="&quot;mozzarella,tomate y &quot;&amp;extra"/>
+                            <output expression="&quot;su pizza es no vegetariana con los siguientes ingredientes:&quot;&amp;ingredientesNV" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;no valido&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
