@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="reactivo2 seriefibonacci"/>
+        <attribute name="authors" value="Ximena"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-06 02:24:39 p. m."/>
+        <attribute name="created" value="WGltZW5hO0RFU0tUT1AtTDAzUU5VMjsyMDI1LTA0LTA2OzAxOjAxOjQ4IHAuIG0uOzMxMjc="/>
+        <attribute name="edited" value="WGltZW5hO0RFU0tUT1AtTDAzUU5VMjsyMDI1LTA0LTA2OzAyOjI0OjM5IHAuIG0uOzE7MzI0MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, A, B, resultado" type="Integer" array="False" size=""/>
+            <assign variable="A" expression="1"/>
+            <assign variable="B" expression="2"/>
+            <output expression="A" newline="True"/>
+            <output expression="B" newline="True"/>
+            <for variable="i" start="3" end="64" direction="inc" step="1">
+                <assign variable="resultado" expression="A+B"/>
+                <assign variable="A" expression="B"/>
+                <assign variable="B" expression="resultado"/>
+                <output expression="resultado" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

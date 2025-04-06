@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="reactivo1 Factoriales"/>
+        <attribute name="authors" value="Ximena"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-06 01:01:05 p. m."/>
+        <attribute name="created" value="WGltZW5hO0RFU0tUT1AtTDAzUU5VMjsyMDI1LTA0LTA2OzEyOjIyOjE5IHAuIG0uOzMxMzA="/>
+        <attribute name="edited" value="WGltZW5hO0RFU0tUT1AtTDAzUU5VMjsyMDI1LTA0LTA2OzAxOjAxOjA1IHAuIG0uOzE7MzIyOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, factorial" type="Integer" array="False" size=""/>
+            <output expression="&quot;ingresa un numero que quieras combertir en su factorial&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="factorial" expression="1"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="factorial" expression="factorial*i"/>
+            </for>
+            <output expression="factorial" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
